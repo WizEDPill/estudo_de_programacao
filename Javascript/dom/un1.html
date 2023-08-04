@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+<style>
+    body{
+        background-color: aqua;
+        color: white;
+        font: normal 18pt Arial;
+
+    }
+    
+</style>
+<!--É UM DOCUMENTO DE OBJETOS DENTRO DO NAVEGADOR QUE VAI DAR ACESSO AOS COMPONENTES INTERNOS DO MEU SITE-->
+<!--A ÁRVORE DO SITE ESTA DENTRO DE UM OBJETO NO JAVASCRIPT CHAMADO WINDOW-->
+<!--lOCATION: ME DIZ A LOCALIZAÇÃO DO MEU SITE  DOCUMENT: DOCUMENTO ATUAL HISTORY : QUE MOSTRA DE ONDE EU VIM E PARA ONDE EU VOU  -->
+<!--QUEM ESTÁ EM CIMA DO CHILDRENS SÃO OS PARENTS -->
+</head>
+<body>
+    <h1>Iniciando estudos Dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM </strong> EM JavaScript </p>
+    <div id=" 'msg">Clique em mim</div>
+<Script>
+    var corpo= window.document.body // declarei que a variavel corpo é igual ao "BODY"
+    window.document.write(window.document.URL)
+    var p1= window.document.getElementsByTagName('p')[1] // estou pegando o primeiro p1 que fica na posição 0 
+    window.document.write('Está escrito assim : '+p1.innerHTML)// peguei o conteudo do paragrafo '0'
+    corpo.style.background='black'
+    pq.style.color='blue'
+    window.alert(p1.innerText)// JÁ PEGA O TEXTO FORMATADO 
+    var d = window.document.getElementById('msg')// pegando um elemento por id 
+    d.style.background='yellow'
+    d.innerText='Estou aguardando...'
+    // quando é classe é representada por . quando é id # 
+    var nd= window.document.querySelector('div#msg')
+    s.style.background='blue'
+</Script>
+</body>
+</html>
