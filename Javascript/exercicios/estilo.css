@@ -1,0 +1,23 @@
+body{
+    background: rgb(70, 142, 236);
+    font: normal 15pt arial;
+    
+}
+section{
+ background: white;
+ border-radius: 10px; 
+ padding: 16px;/* meio da div */
+ width: 500px; 
+ margin: auto;/* centralizando */ 
+ box-shadow: 3px 3px 10px rgba(0,0,0,0.363);/* sombra embaixo -> 5 de deslocamento lateral 5 de deslocamento vertical 10 px de verticalmento  */ 
+ 
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+header{
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> + <!--se fosse em php o name é importante, mas como é jscript o id é principal--> 
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado:</div>
+    <script>
+        function somar(){
+            //pegue os elementos lincados com esse nome ali encima e receba os valores informados pelo input no html
+            var tn1= window.document.getElementById('txtn1') 
+            var tn2= window.document.querySelector('input#txtn2')
+            var res=window.document.getElementById("res")
+            var n1= Number(tn1.value)
+            var n2= Number(tn2.value)
+            var s= n1 + n2
+            res.innerHTML = s // coloquei que o resultado dessa soma sera a variável S 
+
+        }
+    </script>
+</body>
+
+</html>
